@@ -1,26 +1,24 @@
-.location{
+.location {}
 
-}
-
-.location>h5{
+.location>h5 {
     color: rgb(0, 0, 0);
     font-weight: 800;
     margin-bottom: 6px;
     font-size: 18px;
 }
 
-.location>p{
+.location>p {
     margin: 0px;
     font-size: 13px;
     font-weight: 400;
 }
 
-.vertical-line{
+.vertical-line {
     height: 55px;
     border-left: 2px solid #f2f2f2;
 }
 
-.search-div{
+.search-div {
     padding: 0px 12px;
     border: 1px solid rgb(232, 232, 232);
     border-radius: 12px;
@@ -28,49 +26,51 @@
     color: rgb(130, 130, 130);
 }
 
-.search-div>input{
+.search-div>input {
     border: none;
     background-color: transparent;
     width: 40vw;
     height: 45px;
 }
 
-::placeholder{
+::placeholder {
     font-size: 14px;
     color: rgb(153, 153, 153);
 }
 
-.my-cart{
+.my-cart {
     background-color: #0d831e !important;
     font-size: 14px !important;
 }
 
-.my-categories{
+.my-categories {
     width: 85%;
 }
-.my-container{
+
+.my-container {
     margin: auto;
     width: 85%;
     overflow-x: scroll;
 }
-.my-list{
+
+.my-list {
     white-space: nowrap;
 }
 
-.my-list>img{
+.my-list>img {
     padding-inline: 10px;
 }
 
-::-webkit-scrollbar-corner{
+::-webkit-scrollbar {
     display: none;
 }
 
-.my-card{
+.my-card {
     width: 179px;
-    margin-inline:10px ;
+    margin-inline: 10px;
 }
 
-.my-card-time{
+.my-card-time {
     width: fit-content;
     border-radius: 4px;
     background-color: rgb(248, 248, 248);
@@ -80,56 +80,163 @@
     color: rgb(54, 54, 54);
 }
 
-.my-card-title{
+.my-card-title {
     color: rgb(31, 31, 31);
     font-weight: 600;
     font-size: 13px;
 }
 
-.my-card-weight{
+.my-card-weight {
     color: #666666;
     font-size: 13px;
 }
 
-.card-price{
+.card-price {
     color: rgb(31, 31, 31);
     font-weight: 600;
     font-size: 20px;
     line-height: 11px;
 }
 
-.mrp{
+.mrp {
     color: #666666;
     font-size: 12px;
 }
-.category-section{
+
+.category-section {
     width: 85%;
     margin: auto;
 }
-.category-section-row{
+
+.category-section-row {
     width: 100%;
     overflow-x: scroll;
 }
-.footer{
+
+.footer-name {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 250px;
+    margin-top: 30px;
 }
 
 
-@media screen and (max-width:768px){
-    nav,.row-2,.row-1{
+.my-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 48px;
+    margin-inline: auto;
+    width: 85vw;
+
+}
+
+.row-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+.row-2 {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.row-2-col-1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+
+}
+
+.row-2-col-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+}
+
+.row-2-col-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row-2-col-3>a {
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.row-3 {
+    color: #666666;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+td {
+    padding: 3px 20px;
+    color: #666666;
+    font-size: 16px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.table-1 {
+    flex: 2;
+}
+
+.table-2 {
+    flex: 4;
+}
+
+#first {
+    font-size: small;
+}
+
+@media screen and (max-width:768px) {
+
+    nav,
+    .row-2,
+    .row-1 {
         flex-direction: column !important;
     }
-    .vertical-line,.hero-section>img{
+
+    .vertical-line,
+    .hero-section>img {
         display: none !important;
     }
-    .nav-btns,.row-2>p,.search-div{
+
+    .nav-btns,
+    .row-2>p,
+    .search-div {
         width: 90%;
     }
-    .row-1>div,.my-container{
+
+    .row-1>div,
+    .my-container {
         margin-top: 20px;
     }
-   
+
 }
